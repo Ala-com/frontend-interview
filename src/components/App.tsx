@@ -8,7 +8,7 @@ const App = () => {
   useEffect(() => {
     const fetchResults = async () => {
       const results = await search(searchQuery);
-      setSearchResults(results as SearchResult[]);
+      setSearchResults(results);
     };
 
     fetchResults();
